@@ -1,0 +1,11 @@
+body {
+  background-color: #000000;
+  text-align: center;
+}
+ 
+footer {
+  vertical-align: text-bottom;
+}
+address {
+  vertical-align: text-bottom;
+}

@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 
-<html>
+<html data-ng-app>
 <head>
+  <meta charset="UTF-8">
   <title>Esqueleto</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
-<body>
-  <div id="greeting"></div>
+<body ng-init="userValue='text'">
   <header><h1>El Estructura Esqueleto</h1></header>
   <figure>
     <img id=image1 src=http://i.levykauppax.fi/cover/normal/3/36/368168.jpg>
   </figure>
   <figcaption>Mutacalypso Now!</figcaption>  
   <br>
+  <div ng-hide=hidden>
+
+    <input type=text ng-model="userValue"> <br>
+    
+    {{ userValue }} <br>
+  </div>
+  <input type=checkbox ng-model="hidden"> <br>
   <br>
   <footer>
     <address>

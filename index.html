@@ -1,22 +1,19 @@
 <!DOCTYPE html>
+<html lang="en" data-ng-app>
+<title>Esqueleto</title>
+<meta charset="UTF-8">
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 
-<html data-ng-app>
-<head>
-  <meta charset="UTF-8">
-  <title>Esqueleto</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-
-</head>
-<body ng-init="userValue='text'">
+<body>
   <header><h1>El Estructura Esqueleto</h1></header>
   <figure>
     <img id=image1 src=http://i.levykauppax.fi/cover/normal/3/36/368168.jpg>
   </figure>
   <figcaption>Mutacalypso Now!</figcaption>  
   <br>
-  <div ng-hide=hidden>
+  <div ng-init="userValue='text'" ng-hide=hidden>
 
     <input type=text ng-model="userValue"> <br>
     
@@ -29,12 +26,9 @@
     <strong>Esqueleto, Inc.</strong><br>
     321 Mutant Ave<br>
     San Francisco, CA 94107<br>
-    <abbr title="Phone">#</abbr> (123) 456-7890
-    </address>
-
-  <address>
-    <strong>Full Name</strong><br>
-    <a href="mailto:#">first.last@esqueleto.com</a>
+    <abbr title="Phone">#</abbr> (123) 456-7890<br>
+    <strong>Muta Calypso</strong><br>
+    <a href="mailto:#">muta.calypso@esqueleto.com</a>
   </address>
   </footer>
   
